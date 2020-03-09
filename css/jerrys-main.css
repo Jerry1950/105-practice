@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Style the header */
+
+.header {
+    background-color: #d2e3e6;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 32px;
+    color: #5e549b;
+    text-shadow: 2px 2px 5px red;
+}
+
+.column,
+h2 {
+    font-weight: bold;
+    font-size: 18px;
+    background: #d2e3e6;
+}
+
+.column,
+p {
+    color: black;
+}
+
+
+/* Style the top navigation bar */
+
+ul {
+    width: 100%;
+    padding: 0;
+    list-style: none ! important;
+}
+
+li {
+    text-align: center;
+    padding: 5px;
+    background: #4a525f;
+    font-style: italic;
+    border-bottom: 2px solid white;
+}
+
+li,
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li:hover,
+li a:hover {
+    background: #393535;
+}
+
+
+/* the four columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.container {
+    padding: 20px;
+    color: blue;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        text-align: center;
+    }
+    .container {
+        background: #f2f2f2;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .container {
+        background: #d2e3e6;
+    }
+    .column {
+        float: left;
+        width: 50%;
+        padding: 2px;
+        text-align: center;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .container {
+        background: #d2e3e6;
+    }
+    .column {
+        float: left;
+        width: 50%;
+        padding: 2px;
+        text-align: center;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .container {
+        background: #d2e3e6;
+    }
+    .column {
+        float: left;
+        width: 25%;
+        padding: 5px;
+        text-align: center;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        background: #d2e3e6;
+    }
+    .column {
+        float: left;
+        width: 25%;
+        padding: 5px;
+        text-align: center;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    padding-top: 50px;
+    text-align: center;
+}
